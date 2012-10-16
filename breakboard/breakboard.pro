@@ -1,4 +1,4 @@
-update=Tue 16 Oct 2012 02:16:51 PM CEST
+update=Tue 16 Oct 2012 02:47:10 PM CEST
 version=1
 last_client=eeschema
 [cvpcb]
@@ -100,5 +100,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=motronic
-LibName32=motronic88
+LibName31=motronic88
