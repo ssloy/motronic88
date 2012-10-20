@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 16 Oct 2012 09:22:00 PM CEST
+EESchema Schematic File Version 2  date Wed 17 Oct 2012 10:58:52 AM CEST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "16 oct 2012"
+Date "17 oct 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,66 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 6950 2500
+Connection ~ 6500 1000
+Wire Wire Line
+	6500 2500 6950 2500
+Wire Wire Line
+	6500 965  6500 2500
+Wire Wire Line
+	4550 6200 4550 4900
+Wire Wire Line
+	4550 4900 5850 4900
+Wire Wire Line
+	5850 4900 5850 1265
+Wire Wire Line
+	5750 1265 5750 1350
+Wire Wire Line
+	5750 1350 5650 1350
+Wire Wire Line
+	5600 1000 5650 1000
+Wire Wire Line
+	5600 1000 5600 915 
+Wire Wire Line
+	4050 6200 4050 3500
+Wire Wire Line
+	4050 3500 4400 3500
+Wire Wire Line
+	4400 3500 4400 1100
+Wire Wire Line
+	4400 1100 4350 1100
+Wire Wire Line
+	4350 1100 4350 965 
+Connection ~ 3850 6050
+Connection ~ 7450 5750
+Wire Wire Line
+	7600 5800 7600 5750
+Wire Wire Line
+	7600 5750 6650 5750
+Connection ~ 7250 1500
+Wire Wire Line
+	7250 1500 7900 1500
+Wire Wire Line
+	7900 1500 7900 1550
+Wire Wire Line
+	7600 2100 7600 2000
+Wire Wire Line
+	7600 2000 6550 2000
+Wire Wire Line
+	6550 2000 6550 1050
+Connection ~ 6200 1050
+Wire Wire Line
+	6550 1050 6200 1050
+Wire Wire Line
+	6200 1600 5300 1600
+Wire Wire Line
+	5300 1600 5300 1100
+Wire Wire Line
+	5300 1100 4550 1100
+Wire Wire Line
+	4450 1500 4550 1500
+Wire Wire Line
+	4450 1500 4450 965 
 Wire Wire Line
 	5550 5200 5550 2800
 Wire Wire Line
@@ -74,8 +134,6 @@ Wire Wire Line
 	5150 3950 6850 3950
 Wire Wire Line
 	7250 1550 7250 1265
-Wire Wire Line
-	4550 1050 4550 965 
 Connection ~ 11000 1400
 Wire Wire Line
 	11000 1400 7000 1400
@@ -151,8 +209,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 5500 1500 5500
 Connection ~ 6850 5750
-Wire Wire Line
-	6650 5750 7450 5750
 Wire Wire Line
 	6650 5750 6650 6200
 Connection ~ 7250 5750
@@ -402,12 +458,10 @@ Wire Wire Line
 	1250 4000 1500 4000
 Connection ~ 1250 3000
 Wire Wire Line
-	1250 6000 1250 1000
-Wire Wire Line
 	1250 6000 1500 6000
 Connection ~ 1250 5000
 Wire Wire Line
-	1250 1000 2000 1000
+	2000 1000 1250 1000
 Wire Wire Line
 	10450 2200 10500 2200
 Wire Wire Line
@@ -443,10 +497,6 @@ Wire Wire Line
 	7050 1350 9650 1350
 Connection ~ 9650 1350
 Wire Wire Line
-	4450 965  4450 1450
-Wire Wire Line
-	4450 1450 4550 1450
-Wire Wire Line
 	6950 1265 6950 1900
 Wire Wire Line
 	6950 1900 6850 1900
@@ -455,9 +505,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 2300 7250 2050
 Wire Wire Line
-	4550 1450 4550 2100
-Wire Wire Line
-	4550 2100 6950 2100
+	6950 2100 4550 2100
 Wire Wire Line
 	5450 2750 7900 2750
 Wire Wire Line
@@ -468,6 +516,97 @@ Wire Wire Line
 	7600 4000 4950 4000
 Wire Wire Line
 	4950 4000 4950 6200
+Wire Wire Line
+	4550 1100 4550 965 
+Wire Wire Line
+	4550 2100 4550 1500
+Wire Wire Line
+	6200 1200 6200 915 
+Wire Wire Line
+	7900 2050 7900 2300
+Wire Wire Line
+	7600 2500 7600 2550
+Wire Wire Line
+	1250 1000 1250 6650
+Connection ~ 1250 6000
+Wire Wire Line
+	3550 6250 3550 6050
+Wire Wire Line
+	3550 6050 4050 6050
+Connection ~ 4050 6050
+Wire Wire Line
+	5650 1000 5650 2450
+Wire Wire Line
+	5650 2450 4400 2450
+Connection ~ 4400 2450
+Connection ~ 5650 1350
+Wire Wire Line
+	6500 1000 6550 1000
+Wire Wire Line
+	6550 1000 6550 965 
+$Comp
+L GND #PWR?
+U 1 1 507E71C0
+P 3550 6250
+F 0 "#PWR?" H 3550 6250 30  0001 C CNN
+F 1 "GND" H 3550 6180 30  0001 C CNN
+	1    3550 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 507E71BB
+P 1250 6650
+F 0 "#PWR?" H 1250 6650 30  0001 C CNN
+F 1 "GND" H 1250 6580 30  0001 C CNN
+	1    1250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 507E71AA
+P 7600 5800
+F 0 "#PWR?" H 7600 5800 30  0001 C CNN
+F 1 "GND" H 7600 5730 30  0001 C CNN
+	1    7600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 507E6EB8
+P 6200 1400
+F 0 "D?" H 6200 1500 40  0000 C CNN
+F 1 "1N4001" H 6200 1300 40  0000 C CNN
+	1    6200 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 507E6DD7
+P 7900 1800
+F 0 "R?" V 7980 1800 50  0000 C CNN
+F 1 "1k" V 7900 1800 50  0000 C CNN
+	1    7900 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 507E6DCF
+P 7600 2550
+F 0 "#PWR?" H 7600 2550 30  0001 C CNN
+F 1 "GND" H 7600 2480 30  0001 C CNN
+	1    7600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q?
+U 1 1 507E6DC7
+P 7700 2300
+F 0 "Q?" H 7700 2150 50  0000 R CNN
+F 1 "PN2222A" H 7700 2450 50  0000 R CNN
+	1    7700 2300
+	-1   0    0    -1  
+$EndComp
 $Comp
 L R R?
 U 1 1 507DB347
@@ -552,10 +691,10 @@ $EndComp
 $Comp
 L DIODE D?
 U 1 1 507DAE65
-P 4550 1250
-F 0 "D?" H 4550 1350 40  0000 C CNN
-F 1 "1N4001" H 4550 1150 40  0000 C CNN
-	1    4550 1250
+P 4550 1300
+F 0 "D?" H 4550 1400 40  0000 C CNN
+F 1 "1N4001" H 4550 1200 40  0000 C CNN
+	1    4550 1300
 	0    -1   -1   0   
 $EndComp
 $Comp
