@@ -3,14 +3,8 @@ def mil(mm):
 	return int(mm*1000/25.4)
 def milX10(mm):
 	return int(mm*1000*10/25.4)
-def print_circular_pad(pinno, x, y, diameter, drill):
-	print "$PAD"
-	print "Sh \"%d\" C %d %d 0 0 0" % (pinno, diameter, diameter)
-	print "Dr %d 0 0" % (drill)
-	print "At STD N 00E0FFFF"
-	print "Ne 0 \"\""
-	print "Po %d %d" % (x, y)
-	print "$EndPAD"
+def print_circular_pad(x, y, pin):
+	print "translate([%f, %f, 0]) { %s }" % (x, y, pin)
 
 connector = {
 1 : ["O", "Fuel pump relay control"],
@@ -180,37 +174,37 @@ else:
 		if connector[pin][0]=="vacant": continue
 		x = -milX10(3.25625*(88-pin))
 		y = 0
-		print_circular_pad(pin, x, y, milX10(2.95), milX10(.5))
+		print_circular_pad(x/1000., y/1000., "upper_pin();")
 	for pin in range(1, 7):
 		if connector[pin][0]=="vacant": continue
 		x = -milX10(106.7 - (pin-1)*5)
-		y = milX10(-6.5)
-		print_circular_pad(pin, x, y, milX10(2.2), milX10(.5))
+		y = -milX10(-6.5)
+		print_circular_pad(x/1000., y/1000., "lower_pin();")
+
 	for pin in range(29, 35):
 		if connector[pin][0]=="vacant": continue
 		x = -milX10(104.2 - (pin-29)*5)
-		y = milX10(-6.5)
-		print_circular_pad(pin, x, y, milX10(2.2), milX10(.5))
+		y = -milX10(-6.5)
+		print_circular_pad(x/1000., y/1000., "middle_pin();")
 	for pin in range(7, 22):
 		if connector[pin][0]=="vacant": continue
 		x = -milX10(76.7 - (pin-7)*3.2857)
-		y = milX10(-6)
-		print_circular_pad(pin, x, y, milX10(2.2), milX10(.5))
+		y = -milX10(-6)
+		print_circular_pad(x/1000., y/1000., "lower_pin();")
 	for pin in range(35, 49):
 		if connector[pin][0]=="vacant": continue
 		x = -milX10(75.057 - (pin-35)*3.2857)
-		y = milX10(-7)
-		print_circular_pad(pin, x, y, milX10(2.2), milX10(.5))
+		y = -milX10(-7)
+		print_circular_pad(x/1000., y/1000., "middle_pin();")
 	for pin in range(49, 56):
 		if connector[pin][0]=="vacant": continue
 		x = -milX10(28.2 - (pin-49)*5)
-		y = milX10(-6.5)
-		print_circular_pad(pin, x, y, milX10(2.2), milX10(.5))
+		y = -milX10(-6.5)
+		print_circular_pad(x/1000., y/1000., "middle_pin();")
 	for pin in range(22, 29):
 		if connector[pin][0]=="vacant": continue
 		x = -milX10(25.7 - (pin-22)*5)
-		y = milX10(-6.5)
-		print_circular_pad(pin, x, y, milX10(2.2), milX10(.5))
+		y = -milX10(-6.5)
+		print_circular_pad(x/1000., y/1000., "lower_pin();")
 
-	print "$EndMODULE  motronic88"
-	print "$EndLIBRARY"
+
