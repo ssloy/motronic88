@@ -4309,7 +4309,7 @@ DEF unnamed_object1 Transform {
     Shape {
       appearance Appearance {
         material DEF default Material {
-          diffuseColor 0.1898538076923077 0.1833333333333334 0.1940444444444445
+          diffuseColor 0.2898538076923077 0.2833333333333334 0.2940444444444445
           emissiveColor 0.0 0.0 0.0
           specularColor 0.0 0.0 0.0
           ambientIntensity 0.765743861823362
