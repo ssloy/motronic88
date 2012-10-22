@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sat 20 Oct 2012 06:37:57 PM CEST
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Mon 22 Oct 2012 03:55:45 PM CEST
 
 BeginCmp
 TimeStamp = /507DB28F;
@@ -53,7 +53,7 @@ BeginCmp
 TimeStamp = /507D62FC;
 Reference = F2;
 ValeurCmp = 20A;
-IdModule  = ;
+IdModule  = FUSE5-20;
 EndCmp
 
 BeginCmp
@@ -110,48 +110,6 @@ TimeStamp = /507D5C40;
 Reference = JP5;
 ValeurCmp = JUMPER;
 IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5D0C;
-Reference = JP23;
-ValeurCmp = JUMPER;
-IdModule  = jumper_2_terminals;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5D44;
-Reference = JP24;
-ValeurCmp = JUMPER;
-IdModule  = jumper_2_terminals;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5CDB;
-Reference = JP25;
-ValeurCmp = JUMPER;
-IdModule  = jumper_2_terminals;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5D50;
-Reference = JP50;
-ValeurCmp = JUMPER;
-IdModule  = jumper_2_terminals;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5D5B;
-Reference = JP51;
-ValeurCmp = JUMPER;
-IdModule  = jumper_2_terminals;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5D57;
-Reference = JP52;
-ValeurCmp = JUMPER;
-IdModule  = jumper_2_terminals;
 EndCmp
 
 BeginCmp
@@ -248,41 +206,6 @@ EndCmp
 BeginCmp
 TimeStamp = /507D651B;
 Reference = P73;
-ValeurCmp = CONN_1;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5152;
-Reference = P81;
-ValeurCmp = CONN_1;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D514F;
-Reference = P85;
-ValeurCmp = CONN_1;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D5092;
-Reference = P86;
-ValeurCmp = CONN_1;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D508E;
-Reference = P87;
-ValeurCmp = CONN_1;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = /507D507A;
-Reference = P88;
 ValeurCmp = CONN_1;
 IdModule  = ;
 EndCmp

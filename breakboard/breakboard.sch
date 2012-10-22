@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 20 Oct 2012 05:10:12 PM CEST
+EESchema Schematic File Version 2  date Mon 22 Oct 2012 02:06:11 PM CEST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "20 oct 2012"
+Date "22 oct 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	3000 3300 4800 3300
+Wire Wire Line
+	2800 2800 4900 2800
+Wire Wire Line
+	2600 2300 4850 2300
 Connection ~ 9500 1350
 Wire Wire Line
 	9500 1350 7050 1350
@@ -143,8 +149,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 2500 2600 2300
 Wire Wire Line
-	2600 2300 3350 2300
-Wire Wire Line
 	3100 4200 2300 4200
 Wire Wire Line
 	2300 4200 2300 3250
@@ -163,13 +167,9 @@ Wire Wire Line
 Wire Wire Line
 	2800 6250 1850 6250
 Wire Wire Line
-	3350 2800 2800 2800
-Wire Wire Line
 	2800 2800 2800 4500
 Wire Wire Line
 	2800 4500 1500 4500
-Wire Wire Line
-	3350 3300 3000 3300
 Wire Wire Line
 	3000 3300 3000 6500
 Wire Wire Line
@@ -229,13 +229,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 3800 3600 3800
 Wire Wire Line
-	3950 2550 4600 2550
-Wire Wire Line
-	4600 2550 4600 1000
-Wire Wire Line
-	3950 3050 4700 3050
-Wire Wire Line
-	3950 3300 4800 3300
+	4600 1000 4600 2550
 Wire Wire Line
 	4800 3300 4800 965 
 Wire Wire Line
@@ -257,19 +251,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 1400 5100 915 
 Wire Wire Line
-	4750 1400 4750 1265
-Wire Wire Line
-	4250 1400 4250 1265
-Wire Wire Line
-	4050 1400 4050 1265
-Wire Wire Line
-	4150 1265 4150 1400
-Wire Wire Line
-	4350 1265 4350 1400
-Wire Wire Line
 	4650 965  4650 2050
-Wire Wire Line
-	4650 2050 3950 2050
 Wire Wire Line
 	4750 965  4750 1000
 Wire Wire Line
@@ -313,15 +295,11 @@ Wire Wire Line
 Wire Wire Line
 	4250 6200 4250 5700
 Wire Wire Line
-	4700 3050 4700 965 
+	4700 965  4700 3050
 Wire Wire Line
-	4900 965  4900 2800
+	4900 2800 4900 965 
 Wire Wire Line
-	4900 2800 3950 2800
-Wire Wire Line
-	4850 965  4850 2300
-Wire Wire Line
-	4850 2300 3950 2300
+	4850 2300 4850 965 
 Wire Wire Line
 	3600 4800 4250 4800
 Connection ~ 4250 4800
@@ -386,17 +364,11 @@ Wire Wire Line
 Wire Wire Line
 	2900 5500 2900 3050
 Wire Wire Line
-	2900 3050 3350 3050
-Wire Wire Line
 	1500 3500 2700 3500
 Wire Wire Line
 	2700 3500 2700 2550
 Wire Wire Line
-	2700 2550 3350 2550
-Wire Wire Line
-	3350 2050 2600 2050
-Wire Wire Line
-	2600 2050 2600 1500
+	2600 1500 2600 2050
 Wire Wire Line
 	2600 1500 1500 1500
 Wire Wire Line
@@ -549,6 +521,12 @@ Wire Wire Line
 Wire Wire Line
 	9500 1950 9650 1950
 Connection ~ 9650 1950
+Wire Wire Line
+	2600 2050 4650 2050
+Wire Wire Line
+	2700 2550 4600 2550
+Wire Wire Line
+	2900 3050 4700 3050
 $Comp
 L GND #PWR01
 U 1 1 507E71C0
@@ -937,60 +915,6 @@ F 1 "20A" H 2150 950 40  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L JUMPER JP51
-U 1 1 507D5D5B
-P 3650 3300
-F 0 "JP51" H 3650 3450 60  0000 C CNN
-F 1 "JUMPER" H 3650 3220 40  0001 C CNN
-	1    3650 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER JP52
-U 1 1 507D5D57
-P 3650 3050
-F 0 "JP52" H 3650 3200 60  0000 C CNN
-F 1 "JUMPER" H 3650 2970 40  0001 C CNN
-	1    3650 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER JP50
-U 1 1 507D5D50
-P 3650 2800
-F 0 "JP50" H 3650 2950 60  0000 C CNN
-F 1 "JUMPER" H 3650 2720 40  0001 C CNN
-	1    3650 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER JP24
-U 1 1 507D5D44
-P 3650 2550
-F 0 "JP24" H 3650 2700 60  0000 C CNN
-F 1 "JUMPER" H 3650 2470 40  0001 C CNN
-	1    3650 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER JP23
-U 1 1 507D5D0C
-P 3650 2300
-F 0 "JP23" H 3650 2450 60  0000 C CNN
-F 1 "JUMPER" H 3650 2220 40  0001 C CNN
-	1    3650 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER JP25
-U 1 1 507D5CDB
-P 3650 2050
-F 0 "JP25" H 3650 2200 60  0000 C CNN
-F 1 "JUMPER" H 3650 1970 40  0001 C CNN
-	1    3650 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L JUMPER JP5
 U 1 1 507D5C40
 P 4650 5400
@@ -1186,51 +1110,6 @@ P 5100 1550
 F 0 "P48" H 5180 1550 40  0000 L CNN
 F 1 "CONN_1" H 5100 1605 30  0001 C CNN
 	1    5100 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_1 P81
-U 1 1 507D5152
-P 4750 1550
-F 0 "P81" H 4830 1550 40  0000 L CNN
-F 1 "CONN_1" H 4750 1605 30  0001 C CNN
-	1    4750 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_1 P85
-U 1 1 507D514F
-P 4350 1550
-F 0 "P85" H 4430 1550 40  0000 L CNN
-F 1 "CONN_1" H 4350 1605 30  0001 C CNN
-	1    4350 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_1 P86
-U 1 1 507D5092
-P 4250 1550
-F 0 "P86" H 4330 1550 40  0000 L CNN
-F 1 "CONN_1" H 4250 1605 30  0001 C CNN
-	1    4250 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_1 P87
-U 1 1 507D508E
-P 4150 1550
-F 0 "P87" H 4230 1550 40  0000 L CNN
-F 1 "CONN_1" H 4150 1605 30  0001 C CNN
-	1    4150 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_1 P88
-U 1 1 507D507A
-P 4050 1550
-F 0 "P88" H 4130 1550 40  0000 L CNN
-F 1 "CONN_1" H 4050 1605 30  0001 C CNN
-	1    4050 1550
 	0    1    1    0   
 $EndComp
 $Comp

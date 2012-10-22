@@ -102,7 +102,7 @@ connector = {
 87 : ["I", "Diagnostic connector (RxD)"],
 88 : ["I", "Diagnostic connector (TxD)"]}
 
-if 0:
+if 1:
 	print "EESchema-LIBRARY Version 2.3  Date: Sun 14 Oct 2012 07:21:31 AM CEST"
 	print "#encoding utf-8"
 	print "#"
