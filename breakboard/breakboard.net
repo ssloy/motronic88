@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Tue 23 Oct 2012 02:11:58 PM CEST
+# EESchema Netlist Version 1.1 created  Sat 27 Oct 2012 05:12:56 PM CEST
 (
  ( /507DB28F 1pin +12V1 CONN_1
   ( 1 N-000017 )
@@ -22,11 +22,11 @@
   ( 1 N-000066 )
   ( 2 N-000067 )
  )
- ( /507D6319 FUSE5-20 F1 2A
+ ( /507D6319 blade_fuse F1 2A
   ( 1 N-000027 )
   ( 2 N-000068 )
  )
- ( /507D62FC FUSE5-20 F2 20A
+ ( /507D62FC blade_fuse F2 20A
   ( 1 N-000006 )
   ( 2 GND )
  )

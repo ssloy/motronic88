@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Tue 23 Oct 2012 02:11:58 PM CEST
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sat 27 Oct 2012 05:12:56 PM CEST
 
 BeginCmp
 TimeStamp = /507DB28F;
@@ -46,14 +46,14 @@ BeginCmp
 TimeStamp = /507D6319;
 Reference = F1;
 ValeurCmp = 2A;
-IdModule  = FUSE5-20;
+IdModule  = blade_fuse;
 EndCmp
 
 BeginCmp
 TimeStamp = /507D62FC;
 Reference = F2;
 ValeurCmp = 20A;
-IdModule  = FUSE5-20;
+IdModule  = blade_fuse;
 EndCmp
 
 BeginCmp
